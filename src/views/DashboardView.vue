@@ -1,11 +1,9 @@
 <template>
   <HeaderComponent />
-  <FormCreditCard />
 </template>
 
 <script lang="ts" setup>
 import HeaderComponent from '@/components/HeaderComponent.vue'
-import FormCreditCard from '@/components/FormTokenCreditCard.vue';
 </script>
 
-
+<style scoped></style>

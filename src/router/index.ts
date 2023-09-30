@@ -10,12 +10,28 @@ const router = createRouter({
       component: LoginView
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/token-card',
+      name: 'tokenCard',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/TokenView.vue')
+    },
+    {
+      path: '/card-detail',
+      name: 'cardDetail',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/CardDetailView.vue')
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/DashboardView.vue')
     }
   ]
 })
